@@ -1,4 +1,4 @@
-{C"RIVAL1{I"__pk__:ET{"BattleBGM["B2W2-RivalTheme.ogg"BattleVS["classicVS"RIVAL2{@{@
+{E"RIVAL1{I"__pk__:ET{"BattleBGM["B2W2-RivalTheme.ogg"BattleVS["classicVS"RIVAL2{@{@
 ["Goldeneye - Cradle.ogg@["classicVS"LEADER_Blaine{@{	@
 ["Gym Leader.ogg@["plasmaSM"BattleScript["TURNER"Ace[i"LEADER_Sabrina{@{	@
 ["Gym Leader.ogg@["plasmaSM@["
@@ -47,14 +47,17 @@ NAVY2"AIRFORCEBOSS{@{@
 ["DPPT-Gym Leader.ogg@["plasmaSM@["	OLAF@![i"DOJO_Wendy{@{	@
 ["DPPT-Gym Leader.ogg@["plasmaSM@["
 WENDY@![i"DOJO_Adam{@{	@
-["DPPT-Gym Leader.ogg@["plasmaSM@["	ADAM@![i"LEAGUE_Astrid{@{	@
-["Goldeneye - Cradle.ogg@["plasmaSM@["ASTRIDLEAGUE@![i"LEAGUE_Winslow{@{	@
-["Goldeneye - Cradle.ogg@["plasmaSM@["WINSLOWLEAGUE@![i"LEAGUE_Eugene{@{@
-["Goldeneye - Cradle.ogg@["plasmaSM@![i"LEAGUE_Armand{@{	@
-["Goldeneye - Cradle.ogg@["plasmaSM@["ARMANDLEAGUE@![i"LEAGUE_Vincent{@{	@
-["Goldeneye - Cradle.ogg@["plasmaSM@["VINCENTLEAGUE@![i"LEAGUE_Winston{@{	@
-["Goldeneye - Cradle.ogg@["plasmaSM@["WINSTONLEAGUE@![i"CHAMPION,Joseph{@{@
-[" HGSS-278-BattleChampion.ogg@["plasmaSM@["JOSEPHSAND"CHAMPION,Joseph,1{@{@
-[" HGSS-278-BattleChampion.ogg@["plasmaSM@["JOSEPHTERRAIN"CHANCELLOR,Yule,1{@{	@
+["DPPT-Gym Leader.ogg@["plasmaSM@["	ADAM@![i"
+QUEEN{@{@
+["Goldeneye - Cradle.ogg@["classicVS@![i"LEAGUE_Astrid{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Winslow{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Eugene{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Armand{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Vincent{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Gordon{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Hazel{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"LEAGUE_Turner{@{@
+["Goldeneye - Cradle.ogg@["eliteSM@![i"CHAMPION,Joseph{@{@
+[" HGSS-278-BattleChampion.ogg@["classicVS"CHANCELLOR,Yule,1{@{	@
 ["B2W2-ColressBattle.ogg@["CHANCELLOR@["plasmaSM@![i"RIVAL3{@{@
 ["ZinniaBattleTheme.ogg@["classicVS

@@ -94,7 +94,7 @@ Events.onStepTakenTransferPossible += proc { |_sender,e|
     for i in $Trainer.able_party
       if i.status == :POISON && !i.hasAbility?(:IMMUNITY)
         if !flashed
-          pbFlash(Color.new(255, 0, 0, 128), 8)
+          $scene.spriteset.addUserAnimation(Settings::POISON_ANIMATION_ID, $game_player.x, $game_player.y, true, 3)
           flashed = true
         end
         i.hp -= 1 if i.hp>1 || Settings::POISON_FAINT_IN_FIELD
@@ -242,7 +242,39 @@ Events.onMapChange += proc { |_sender, e|
   end
   $PokemonMap.clear if $PokemonMap
   $PokemonEncounters.setup($game_map.map_id) if $PokemonEncounters
-  $PokemonGlobal.visitedMaps[$game_map.map_id] = true
+  town_setup  = {
+    32 => 43,
+    83 => 84,
+    91 => 92,
+    101 => 103,
+    114 => 116,
+    131 => 132,
+    134 => 412,
+    137 => 138,
+    152 => 153,
+    161 => 162,
+    176 => 177,
+    185 => 186,
+    188 => 189,
+    215 => 216,
+    227 => 228,
+    242 => 243,
+    263 => 267,
+    266 => 268,
+    277 => 278,
+    289 => 291,
+    300 => 302,
+    307 => 309,
+    312 => 314,
+    317 => 322,
+    325 => 326,
+    336 => 342,
+    341 => 353,
+    346 => 358,
+    350 => 366
+  }
+  check_map = (town_setup.keys.include?($game_map.map_id) && $PokemonGlobal.visitedMaps[town_setup[$game_map.map_id]] == true || !town_setup.keys.include?($game_map.map_id))
+  $PokemonGlobal.visitedMaps[$game_map.map_id] = true unless !check_map
   next if old_map_ID == 0 || old_map_ID == $game_map.map_id
   next if !new_map_metadata || !new_map_metadata.weather
   map_infos = pbLoadMapInfos

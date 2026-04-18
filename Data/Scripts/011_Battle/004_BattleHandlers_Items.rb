@@ -146,7 +146,6 @@ BattleHandlers::HPHealItem.add(:ORANBERRY,
   proc { |item,battler,battle,forced|
     next false if !battler.canHeal?
     next false if !forced && !battler.canConsumePinchBerry?(false)
-    next false if !battler.canConsumePinchBerry?(false)
     battle.pbCommonAnimation("EatBerry",battler) if !forced && $test_trigger == false
     battler.pbRecoverHP((battler.hasActiveAbility?(:RIPEN))? 20 : 10)
     itemName = GameData::Item.get(item).name
@@ -176,7 +175,6 @@ BattleHandlers::HPHealItem.add(:SITRUSBERRY,
   proc { |item,battler,battle,forced|
     next false if !battler.canHeal?
     next false if !forced && !battler.canConsumePinchBerry?(false)
-    next false if !battler.canConsumePinchBerry?(false)
     battle.pbCommonAnimation("EatBerry",battler) if !forced && $test_trigger == false
     battler.pbRecoverHP(battler.totalhp/((battler.hasActiveAbility?(:RIPEN))? 2 : 4))
     itemName = GameData::Item.get(item).name
@@ -1561,16 +1559,16 @@ BattleHandlers::EOREffectItem.add(:TOXICORB,
   }
 )
 
-BattleHandlers::EOREffectItem.add(:ROOMSERVICE,
-  proc { |item,battler,battle|
-    next if battle.field.effects[PBEffects::TrickRoom] == 0
-    next if !battler.pbCanLowerStatStage?(:SPEED,battler)
-    battle.pbCommonAnimation("UseItem",battler)
-    itemName = battler.itemName
-    battler.pbLowerStatStageByCause(:SPEED,1,battler,itemName)
-    battler.pbConsumeItem
-  }
-)
+# BattleHandlers::EOREffectItem.add(:ROOMSERVICE,
+#   proc { |item,battler,battle|
+#     next if battle.field.effects[PBEffects::TrickRoom] == 0
+#     next if !battler.pbCanLowerStatStage?(:SPEED,battler)
+#     battle.pbCommonAnimation("UseItem",battler)
+#     itemName = battler.itemName
+#     battler.pbLowerStatStageByCause(:SPEED,1,battler,itemName)
+#     battler.pbConsumeItem
+#   }
+# )
 
 
 #===============================================================================

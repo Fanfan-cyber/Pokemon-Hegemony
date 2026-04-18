@@ -72,6 +72,9 @@ module GameData
       @battle_use       = hash[:battle_use]  || 0
       @type             = hash[:type]        || 0
       @move             = hash[:move]
+      if @type == 12
+        @pocket = 7
+      end
     end
 
     # @return [String] the translated name of this item

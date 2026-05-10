@@ -236,6 +236,9 @@ module GameData
       @evolutions.each do |evo|
         next if evo[3]   # Is the prevolution
         next if evo[1] == :None && exclude_invalid
+        evo[0] = :URSARING2 if @id == :TEDDIURSA2
+        evo[0] = :URSALUNA2 if @id == :URSARING2
+        evo[2] = :ICESTONE if @id == :URSARING2
         ret.push([evo[0], evo[1], evo[2]])   # [Species, method, parameter]
       end
       return ret
